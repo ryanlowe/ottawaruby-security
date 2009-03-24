@@ -1,0 +1,9 @@
+*.log
+.DS_Store
+tmp/**/*
+db/*.sqlite3
+mysql_backups/*
+config/database.yml
+public/cache/*
+public/stylesheets/all.css
+*.rbc

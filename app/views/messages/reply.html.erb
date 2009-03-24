@@ -1,0 +1,19 @@
+  <div>
+    To: <%= @recipient.full_name %>
+  </div>
+  <div id="message-form">
+    <% form_tag :controller => 'messages', :action => 'create', :id => @recipient.id do %>
+      <%= error_messages_for 'message' %>
+      <!--[form:message]-->
+      <%= hidden_field 'message', 'in_reply_to' %>
+
+      <p><label for="message_subject">Subject</label><br/>
+      <%= text_field 'message', 'subject'  %></p>
+
+      <p><label for="message_body">Message</label><br/>
+      <%= text_area 'message', 'body', :cols => 40, :rows => 6 %></p>
+      <!--[eoform:message]-->
+      <%= submit_tag "Send" %>
+      <%= link_to 'Cancel', :action => 'incoming', :id => @parent %>
+    <% end %>
+  </div>

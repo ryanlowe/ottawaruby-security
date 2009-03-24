@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title><%= format_head_title(@title) %></title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <%= stylesheet_link_tag "application", "messages", :cache => "all", :media => 'all' %>
+  <%= stylesheet_link_tag 'print',       :media => 'print' %>
+  <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.1/scriptaculous.js"></script>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+<div id="page">
+<%= render :partial => 'layouts/header' %>
+<%= render :partial => 'layouts/tabs' %>
+<%= render :partial => 'layouts/flash', :locals => { :flash => flash } %>
+  <div id="content">
+<% unless @omit_h1 -%>
+    <h1><%=h @title %></h1>
+<% end -%>
+<%= yield %>
+  </div>
+<%= render :partial => 'layouts/footer' %>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+development:
+  adapter: mysql
+  database: security_dev
+  host: localhost
+  username: root
+  password:
+
+test:
+  adapter: mysql
+  database: security_test
+  host: localhost
+  username: root
+  password:

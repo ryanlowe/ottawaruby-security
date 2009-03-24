@@ -1,0 +1,1 @@
+require 'audit_mass_assignment'

@@ -1,0 +1,5 @@
+<% unless flash[:notice].to_s.length < 1 -%>
+<div id="flash-holder">
+  <div id="flash"><%= flash[:notice] %></div>
+</div>
+<% end -%>

@@ -1,0 +1,32 @@
+
+== 0.1.5
+
+May 28
+= bugfix: failures was size instead of array of failed classes
+
+== 0.1.4
+
+May 28
+= add init.rb to gemspec
+
+== 0.1.3
+
+May 26
+= add AuditUser to test attr_accessible nil
+
+== 0.1.2
+== 0.1.1
+
+May 26
+= add AuditComment model for testing
+= add AuditPost model for testing
+= move audit code to a class
+
+May 25
+= add GitHub gemspec file
+
+== 0.1.0
+
+May 14
+- bugfix for 2.x: attr_accessible is now a Set instead of an Array
+- add CHANGELOG

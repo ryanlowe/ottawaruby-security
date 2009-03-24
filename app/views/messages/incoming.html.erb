@@ -1,0 +1,21 @@
+<%= render :partial => 'messages/side' %>
+  <div style="margin-bottom:1em;">
+<% if @message.deleted? -%>
+    <% form_tag :controller => 'messages', :action => 'undestroy', :id => @message.id do %>
+      <%= submit_tag "Undelete" %>
+    <% end %>
+<% else -%>
+    <% form_tag :controller => 'messages', :action => 'destroy', :id => @message.id do %>
+      <%= submit_tag "Delete" %>
+    <% end %>
+<% end -%>
+  </div>
+  <div id="incoming">
+    <div>Sent at: <%= format_datetime(@message.created_at) %></div>
+    <div>From: <%= link_profile(@message.sender) %></div>
+    <div>Subject: <%= EasyFormat.format(@message.subject_to_s) %></div>
+    <div id="message-body">
+      <%= EasyFormat.format(@message.body) %>
+    </div>
+    <div><%= link_to 'Reply', :action => 'reply', :id => @message %></div>
+  </div>

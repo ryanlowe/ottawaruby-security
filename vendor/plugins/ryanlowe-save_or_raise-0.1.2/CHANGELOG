@@ -1,0 +1,21 @@
+
+== 0.1.2
+
+May 26
+= remove the script directory
+
+
+== 0.1.1
+
+May 25
+= add the MIT license
+
+== 0.1.0
+
+May 26
+= add GitHub gemspec file
+= finished first rough implementation
+
+May 25
+= add the needed parts of the Rails framework to run tests
+= README: the raison d'être

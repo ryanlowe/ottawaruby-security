@@ -1,0 +1,7 @@
+<%= render :partial => 'settings/tabs' %>
+<div id="preferences">
+<% form_tag :action => 'update_preferences' do %>
+  <%= render :partial => 'preferences_form' %>
+  <%= submit_tag 'Save' %>
+<% end %>
+</div>

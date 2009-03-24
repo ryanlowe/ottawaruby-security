@@ -1,0 +1,5 @@
+ryanlowe:
+  id: 200001
+  user_id: 100001 #ryanlowe
+  notify_new_message: <%= true %>
+  

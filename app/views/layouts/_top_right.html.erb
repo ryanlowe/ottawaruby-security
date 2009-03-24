@@ -1,0 +1,17 @@
+<div id="top-right">
+<% if logged_in? -%>
+        <ul class="collapsed menu">
+          <li class="first">You are <b><%=h current_user.username %></b></li>
+<%   if current_user.admin? -%>
+          <li><%= link_to 'Admin', admin_users_url %></li>
+<%   end -%>
+          <li><%= link_to 'Settings', preferences_url %></li>
+          <li><%= link_to "Log out", logout_url, :method => :post, :rel => "nofollow" %></li>
+        </ul>
+<% else -%>
+        <ul class="collapsed menu">
+          <li class="first"><%= link_to 'Log in', login_url, :rel => "nofollow" %></li>
+          <li><%= link_to 'Sign up', signup_url, :rel => "nofollow" %></li>
+        </ul>
+<% end -%>
+</div>

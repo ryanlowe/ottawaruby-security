@@ -1,0 +1,15 @@
+<%= render :partial => 'messages/side' %>
+  <div id="outbox">
+<% if (@messages.nil? or @messages.size < 1) -%>
+    <p>You haven't sent any messages yet</p>
+<% else -%>
+    <ul id="messages">
+<%   for message in @messages -%>
+      <li>
+        <!--input type="checkbox"/--><%= message.recipient.full_name %>              
+        <%= link_to EasyFormat.format(message.subject_to_s), :action => 'outgoing', :id => message -%>                
+      </li>
+<%   end -%>
+    </ul>
+<% end -%>
+  </div>

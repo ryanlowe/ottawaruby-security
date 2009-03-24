@@ -1,0 +1,36 @@
+Moved to GitHub from Google Code on May 1, 2008
+Was hosted at http://code.google.com/p/audit-mass-assignment/
+
+= audit_mass_assignment plugin for Ruby on Rails
+
+  The audit_mass_assignment Ruby on Rails plugin contains a rake task that
+  checks the models in your project for the attr_accessible whitelist approach
+  for protecting against "mass assignment" exploits.  It does not check for
+  use of attr_protected.
+
+== Installation
+
+  gem install ryanlowe-audit_mass_assignment --source http://gems.github.com/
+
+== Usage
+
+  $ rake audit:mass_assignment
+
+== Notes
+
+  If you want to protect ALL attributes in your model use:
+  
+    attr_accessible nil
+
+  Why are "mass assignment" exploits a danger to Rails applications? See these links:
+  
+  1. rorsecurity.info: Do not create records directly from form parameters
+     http://www.rorsecurity.info/2007/03/20/do-not-create-records-directly-from-form-parameters/
+  
+  2. Railscasts: Hackers Love Mass Assignment
+     http://railscasts.com/episodes/26
+  
+  3. Rails Manual: Typical mistakes in Rails applications: Creating records directly from form parameters
+     http://manuals.rubyonrails.com/read/chapter/47
+   
+   

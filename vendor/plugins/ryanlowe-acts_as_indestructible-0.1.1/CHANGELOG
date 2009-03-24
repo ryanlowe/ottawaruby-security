@@ -1,0 +1,40 @@
+
+== 0.1.1
+
+May 26
+= test destroy_all with conditions
+
+== 0.1.0
+
+May 26
+= add GitHub gemspec file
+
+May 23
+= divide the unit tests into subdirectories
+= support find by id
+
+May 22
+= support for exists? and with :include_destroy option
+
+May 15
+= destroy and destroy_all: check that user is not nil and has an id method
+= require user parameter for destroy and destroy_all methods
+= prefix test models with Indestructible to avoid name collisions with popular model names
+
+May 14
+= add options_excluding_deleted protected method
+
+May 2
+= don't allow self methods delete or delete_all to be called
+= test destroy_all
+= don't destroy if already destroyed
+= naively implement destroy instance method
+= add Comment model
+
+May 1 2008
+= implement destroyed? instance method
+= acts_as_indestructible declaration working
+= add Post model
+= add partial Rails skeleton to help with testing
+= basic plugin project skeleton
+= started project

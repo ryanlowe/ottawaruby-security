@@ -1,0 +1,9 @@
+<%= render :partial => 'messages/side' %>
+  <div id="outgoing" style="margin-top:16px;">
+    <div>Sent at: <%= format_datetime(@message.created_at) %></div>
+    <div>To: <%= link_profile(@message.recipient) %></div>
+    <div>Subject: <%= EasyFormat.format(@message.subject_to_s) %></div>
+    <div id="message-body">
+      <%= EasyFormat.format(@message.body) %>
+    </div>
+  </div>

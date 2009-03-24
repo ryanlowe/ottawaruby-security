@@ -1,0 +1,25 @@
+
+Hosted at GitHub since May 1, 2008
+http://github.com/ryanlowe/easy_format
+
+Was hosted at RubyForge
+http://rubyforge.org/projects/simple-format/
+
+= easy_format
+
+  easy_format is a Ruby on Rails plugin that formats and escapes
+  database text for HTML views. The result looks a lot like text in
+  Gmail: line breaks are converted and HTTP links are linked up.
+  
+  It will not support tags like BBCode; it just formats plain text.
+
+== Installation
+
+  gem install ryanlowe-easy_format --source http://gems.github.com/
+
+== Usage
+
+  <%= EasyFormat.format(@post.body) %>
+  
+  Note: HTML brackets are escaped by format() so
+  you do not need to use h() as well.

@@ -1,0 +1,14 @@
+
+== 0.1.0
+
+May 26
+= added GitHub gemspec
+
+May 1 2008
+- moved to GitHub
+
+Dec 17 2007
+- handle nil and non-string properly
+
+Sep 25 2007
+- simple_format plugin created from code in existing projects

@@ -1,0 +1,7 @@
+<% if logged_in? and !current_user.is?(@user) -%>
+<div id="profile-actions">
+  <ul class="collapsed menu">
+    <li class="first"><%= link_to 'Send a message to '+h(@user.username), :controller => 'messages', :action => 'new', :id => @user.id %></li>
+  </ul>
+</div>
+<% end -%>
