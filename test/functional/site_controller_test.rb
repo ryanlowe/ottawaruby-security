@@ -6,6 +6,8 @@ class SiteControllerTest < ActionController::TestCase
     assert '/boom', :controller => 'site', :action => 'boom'
     assert '',      :controller => 'site', :action => 'front'
     assert '/',     :controller => 'site', :action => 'front'
+    assert '/implementations', :controller => 'site', :action => 'implementations'
+    assert '/sources', :controller => 'site', :action => 'sources'
   end
   
   #
@@ -44,6 +46,46 @@ class SiteControllerTest < ActionController::TestCase
     
     assert_response :success
     assert_template 'front'
+  end
+  
+  #
+  # implementations
+  #
+  
+  def test_implementations
+    get :implementations
+    
+    assert_response :success
+    assert_template 'implementations'
+  end
+  
+  def test_implementations
+    launched false
+    
+    get :implementations
+    
+    assert_response :success
+    assert_template 'implementations'
+  end
+  
+  #
+  # sources
+  #
+  
+  def test_sources
+    get :sources
+    
+    assert_response :success
+    assert_template 'sources'
+  end
+  
+  def test_sources
+    launched false
+    
+    get :sources
+    
+    assert_response :success
+    assert_template 'sources'
   end
 
 end

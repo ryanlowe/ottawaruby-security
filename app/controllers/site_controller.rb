@@ -10,6 +10,11 @@ class SiteController < ApplicationController
   end
   
   def implementations
+    @title = "Implementations"
+  end
+  
+  def sources
+    @title = "Sources"
   end
 
 end

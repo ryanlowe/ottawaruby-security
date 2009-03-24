@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
     site.connect '/boom', :action => 'boom'
     site.front   '/',     :action => 'front'
     site.implementations '/implementations', :action => 'implementations'
+    site.sources '/sources', :action => 'sources'
   end
   
   #account
