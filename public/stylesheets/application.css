@@ -1,6 +1,6 @@
 
 body { margin:0;padding:0; }
-body, div, span, td, input, select { font-family:Arial;font-size:10pt; }
+body, div, span, td, input, select { font-family:Arial;font-size:12pt; }
 
 h1, h2, h3, h4, h5 { margin:0;padding:0; }
 
@@ -15,7 +15,7 @@ ul.menu            {}
 table.bordered        { border-collapse:collapse; }
   table.bordered tr   {}
     table.bordered th { border:1px solid #999;padding:0.25em 1em;background-color:#eee; }
-    table.bordered td { border:1px solid #999;padding:0.25em 1em;font-size:12pt; }
+    table.bordered td { border:1px solid #999;padding:0.25em 1em; }
 
 td.no { background-color:#fcc; }
 
