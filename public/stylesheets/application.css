@@ -15,7 +15,9 @@ ul.menu            {}
 table.bordered        { border-collapse:collapse; }
   table.bordered tr   {}
     table.bordered th { border:1px solid #999;padding:0.25em 1em;background-color:#eee; }
-    table.bordered td { border:1px solid #999;padding:0.25em 1em; }
+    table.bordered td { border:1px solid #999;padding:0.25em 1em;font-size:12pt; }
+
+td.no { background-color:#fcc; }
 
 /* page structure */
 

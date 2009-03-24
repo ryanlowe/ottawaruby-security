@@ -8,5 +8,8 @@ class SiteController < ApplicationController
 
   def front
   end
+  
+  def implementations
+  end
 
 end

@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => "site" do |site|
     site.connect '/boom', :action => 'boom'
     site.front   '/',     :action => 'front'
+    site.implementations '/implementations', :action => 'implementations'
   end
   
   #account
