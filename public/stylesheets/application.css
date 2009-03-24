@@ -19,12 +19,12 @@ table.bordered        { border-collapse:collapse; }
 
 /* page structure */
 
-#page { border:1px solid #eee;width:950px;position:relative;margin:1em auto;padding:0; }
+#page { order:1px solid #eee;width:950px;position:relative;margin:1em auto;padding:0; }
   #header       { margin-bottom:1em; }
     #title      { font-size:30pt;font-weight:bold;line-height:1; }
     #top-right  { position:absolute;top:0;right:0; }
   #tabs         {}
     #tabs li    { font-size:12pt; }
   #flash        { border:2px solid red;padding:0.5em;margin:1em 0; }
-  #content { border:1px solid #eee;margin:1em 0;padding:1em 0;border-top:2px solid #ccc;border-bottom:2px solid #ccc; }
+  #content { order:1px solid #eee;margin:1em 0;padding:1em 0;border-top:2px solid #ccc;border-bottom:2px solid #ccc; }
   #footer { text-align:center;margin-bottom:8em; }

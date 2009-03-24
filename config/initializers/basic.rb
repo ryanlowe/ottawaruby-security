@@ -1,5 +1,5 @@
 
-SITE_NAME = "Jump Off"
+SITE_NAME = "OttawaRuby Security"
 DOMAIN_NAME = "example.com"
 
 NOTIFIER_EMAIL = "#{SITE_NAME} <notifier@#{DOMAIN_NAME}>"
