@@ -1,0 +1,8 @@
+
+<% form_tag :controller => 'item', :action => 'create' do %>
+  <!--[form:item]-->
+  <label for="item_name">Add an Item:</label>
+  <%= text_field 'item', 'name' %>
+  <!--[eoform:item]-->
+  <%= submit_tag 'Add' %>
+<% end %>

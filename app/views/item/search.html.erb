@@ -1,0 +1,14 @@
+
+<% form_tag({ :controller => 'item', :action => 'search' }, :method => :get) do %>
+  
+  <!--[form:item]-->
+  <label for="q">Search Items:</label>
+  <%= text_field_tag 'q', params[:q] %>
+  <!--[eoform:item]-->
+  <%= submit_tag 'Go!' %>
+  
+<% end %>
+
+<% unless @items.nil? -%>
+<%= render :partial => 'item/list' %>
+<% end -%>

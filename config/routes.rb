@@ -28,6 +28,15 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => "home" do |home|
     home.home '/home', :action => 'index'
   end
+  
+  #item
+  map.with_options :controller => "item" do |item|
+    item.items   '/items',        :action => 'list'
+    item.search  '/search/items', :action => 'search'
+    item.connect '/create/item',  :action => 'create'
+  end
+  
+  ## UNUSED
 
   #messages
   map.with_options :controller => "messages" do |messages|

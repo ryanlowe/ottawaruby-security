@@ -1,5 +1,7 @@
 
 Mar 24
+- create, list and search items
+= add Item controller
 = add Item model
 - add sources page
 - list of implementations page

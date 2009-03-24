@@ -7,4 +7,9 @@ class Item < ActiveRecord::Base
   
   #attr_accessible :name
   
+  def self.search_for_name(query)
+    like = '%'+query+'%'
+    Item.find(:all, :conditions => ["name LIKE ?", like], :order => "id DESC")
+  end
+  
 end
